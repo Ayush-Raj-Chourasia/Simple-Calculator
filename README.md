@@ -9,13 +9,6 @@ A simple calculator application that performs basic arithmetic operations such a
 - Multiplication
 - Division
 
-## Usage
-1. Run the application:
-    ```sh
-    python calculator.py
-    ```
-2. Follow the on-screen instructions to perform calculations.
-
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
