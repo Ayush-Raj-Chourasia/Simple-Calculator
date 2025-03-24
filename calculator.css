@@ -1,89 +1,41 @@
-body{
-    height:max-content;
-    background: linear-gradient(to right,#0a0a0a,#3a4452);
-}
-h2{
-    text-align: center;
-    color: blanchedalmond;
-}
-.layout{
-    border:0px;
-    padding: 10px;
-    padding-top: 30px;
-    border-radius:10px;
-    box-shadow: 0 0 10px gray;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 160px;
-}
-.placeholder{
-    padding-bottom: 5px;
-}
-input{
-    height: 50px;
-    width: 250px;
-    border:0px;
-    font-size: large;
-    color:white;
-    background: linear-gradient(to right,#0a0a0a,#3a4452);
-    text-align: right;
-}
-input::placeholder{
-    color:azure;
-}
-.buttons{
-    margin-top: 10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.r{
-    height:50px;
-    width: 50px;
-    border-radius:50%;
-    margin:5px;
-    border: 0px;
-    background:linear-gradient(to left,gray,black);
-    box-shadow: -2px -2px 8px  rgb(152, 48, 48);
-    color: white;
-    font-size: large;
-    cursor: pointer;
-}
-.row1 button{
-    color: rgb(220, 231, 18);
-    
-}
-.coloum{
-    color: rgb(220, 231, 18); 
-    height:50px;
-    width: 50px;
-    border-radius:50%;
-    margin:5px;
-    border: 0px;
-    background:linear-gradient(to left,gray,black);
-    box-shadow: -2px -2px 8px  rgb(152, 48, 48);
-    font-size: large;
-    cursor: pointer;
-
-}
-.equals{
-     height:50px;
-    width: 50px;
-    border-radius:50%;
-    margin:5px;
-    border: 0px;
-    background-color: rgb(240, 128, 7);
-    box-shadow: -2px -2px 8px  rgb(152, 48, 48);
-    color: white;
-    font-size: large;
-    cursor: pointer;
+:root {
+    --bg-color-1: #0a0a0a;
+    --bg-color-2: #3a4452;
+    --text-color: blanchedalmond;
+    --button-bg: linear-gradient(to left, gray, black);
+    --button-shadow: -2px -2px 8px rgb(152, 48, 48);
+    --equals-bg: rgb(240, 128, 7);
+    --history-bg: rgba(255, 255, 255, 0.1);
 }
 
+body.light-theme {
+    --bg-color-1: #f0f0f0;
+    --bg-color-2: #ffffff;
+    --text-color: #333333;
+    --button-bg: linear-gradient(to left, #e0e0e0, #ffffff);
+    --button-shadow: -2px -2px 8px rgba(0, 0, 0, 0.1);
+    --equals-bg: #ff9500;
+    --history-bg: rgba(0, 0, 0, 0.1);
+}
 
+body {
+    height: max-content;
+    background: linear-gradient(to right, var(--bg-color-1), var(--bg-color-2));
+    transition: background 0.3s ease;
+}
 
+/* Rest of existing styles remain the same with variables applied */
 
+.history-container {
+    background: var(--history-bg);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    max-height: 400px;
+    overflow-y: auto;
+}
 
-
+#history div {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--text-color);
+}

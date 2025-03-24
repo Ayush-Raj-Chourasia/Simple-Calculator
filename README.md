@@ -1,25 +1,28 @@
-# Simple Calculator
+# Enhanced Calculator
 
-## Description
-A simple calculator application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. This project is designed to demonstrate fundamental programming concepts and provide a useful tool for basic calculations.
+A feature-rich calculator with history tracking, theme switching, and keyboard support.
 
 ## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- Basic arithmetic operations (+, -, ×, ÷)
+- Percentage calculations
+- Error handling
+- Calculation history
+- Light/dark theme toggle
+- Keyboard support
+- Responsive design
 
 ## Usage
-1. Run the application:
-    ```sh
-    python calculator.py
-    ```
-2. Follow the on-screen instructions to perform calculations.
+1. Open `index.html` in a web browser
+2. Use mouse or keyboard to input numbers:
+   - `Enter` = Calculate
+   - `Backspace` = Delete
+   - `Escape` = Clear
+3. Toggle theme using the moon/sun button
 
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+## Technologies
+- HTML5
+- CSS3 (Variables, Flexbox)
+- JavaScript (ES6)
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
+MIT License - see [LICENSE](LICENSE) for details
